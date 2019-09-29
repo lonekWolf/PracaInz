@@ -1,0 +1,14 @@
+C:\Users\lonek\source\repos\LaboratoriumWabco\LaboratoriumWabco\bin\Debug\LaboratoriumWabco.exe.config
+C:\Users\lonek\source\repos\LaboratoriumWabco\LaboratoriumWabco\bin\Debug\LaboratoriumWabco.exe
+C:\Users\lonek\source\repos\LaboratoriumWabco\LaboratoriumWabco\bin\Debug\LaboratoriumWabco.pdb
+C:\Users\lonek\source\repos\LaboratoriumWabco\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.Form1.resources
+C:\Users\lonek\source\repos\LaboratoriumWabco\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.Properties.Resources.resources
+C:\Users\lonek\source\repos\LaboratoriumWabco\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.csproj.GenerateResource.cache
+C:\Users\lonek\source\repos\LaboratoriumWabco\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.csproj.CoreCompileInputs.cache
+C:\Users\lonek\source\repos\LaboratoriumWabco\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.exe
+C:\Users\lonek\source\repos\LaboratoriumWabco\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.pdb
+C:\Users\lonek\source\repos\LaboratoriumWabco\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.DodajWindow.resources
+C:\Users\lonek\source\repos\LaboratoriumWabco\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.InformacjaWindow.resources
+C:\Users\lonek\source\repos\LaboratoriumWabco\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.ArchiwumWindow.resources
+C:\Users\lonek\source\repos\LaboratoriumWabco\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.InformacjaOSorcieWindow.resources
+C:\Users\lonek\source\repos\LaboratoriumWabco\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.csprojAssemblyReference.cache
