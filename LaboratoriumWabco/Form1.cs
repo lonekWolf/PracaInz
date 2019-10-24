@@ -60,8 +60,10 @@ namespace LaboratoriumWabco
          
         private void button6_Click(object sender, EventArgs e)
         {
-            listView1.Items.Clear();
-            listView1PobierzDane();
+            int numerCzesci = Convert.ToInt32(listView1.SelectedItems[0].SubItems[0].Text);
+            EdytujSort edytujSort = new EdytujSort(numerCzesci);
+            edytujSort.Show();
+
         }
 
         private void usunZBazyDanych()

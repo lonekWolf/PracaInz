@@ -50,7 +50,7 @@
             this.aktualneSortyBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.aktualneSortyBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.aktualneSortyBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
-            this.button6 = new System.Windows.Forms.Button();
+            this.buttonEdytuj = new System.Windows.Forms.Button();
             this.labelInformacja = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.wabcoDBDataSet)).BeginInit();
@@ -217,15 +217,15 @@
             this.aktualneSortyBindingSource6.DataSource = this.wabcoDBDataSet;
             this.aktualneSortyBindingSource6.Position = 0;
             // 
-            // button6
+            // buttonEdytuj
             // 
-            this.button6.Location = new System.Drawing.Point(581, 149);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(149, 56);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Aktualizuj liste";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.buttonEdytuj.Location = new System.Drawing.Point(581, 149);
+            this.buttonEdytuj.Name = "buttonEdytuj";
+            this.buttonEdytuj.Size = new System.Drawing.Size(149, 56);
+            this.buttonEdytuj.TabIndex = 8;
+            this.buttonEdytuj.Text = "Edytuj sort";
+            this.buttonEdytuj.UseVisualStyleBackColor = true;
+            this.buttonEdytuj.Click += new System.EventHandler(this.button6_Click);
             // 
             // labelInformacja
             // 
@@ -255,7 +255,7 @@
             this.ClientSize = new System.Drawing.Size(737, 364);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelInformacja);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.buttonEdytuj);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
@@ -301,7 +301,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button buttonEdytuj;
         private System.Windows.Forms.Label labelInformacja;
         private System.Windows.Forms.Label label2;
     }
