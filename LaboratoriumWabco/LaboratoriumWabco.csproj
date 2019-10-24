@@ -67,6 +67,12 @@
     <Compile Include="ArchiwumWindow.Designer.cs">
       <DependentUpon>ArchiwumWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="EdytujSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdytujSort.Designer.cs">
+      <DependentUpon>EdytujSort.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </Compile>
     <EmbeddedResource Include="ArchiwumWindow.resx">
       <DependentUpon>ArchiwumWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EdytujSort.resx">
+      <DependentUpon>EdytujSort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
