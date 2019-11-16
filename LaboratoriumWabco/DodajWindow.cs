@@ -12,7 +12,7 @@ namespace LaboratoriumWabco
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {   
             this.Close();
         }
 
@@ -23,9 +23,9 @@ namespace LaboratoriumWabco
         private void dodajSortDoBazyDanych(string numer, string linia, string data, string opis, string mqe, string firma, string inzynier)
         {
             //Dodawanie do bazy archiwum sortow
-            using (SqlConnection cnn = new SqlConnection(@"Server = tcp:wabcosorty.database.windows.net,1433; Initial Catalog = WabcoDB; Persist Security Info = False; User ID = lonekwolf; Password = Plemion@12; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;"))  //Data Source = DESKTOP - FN2EULB; Initial Catalog = WabcoDB; Integrated Security = True
+            using (SqlConnection cnn = new SqlConnection(Properties.Settings.Default.CSBazy))  
             {
-                using (SqlCommand command = new SqlCommand("insert into [Wabco.ZbiorSortow](NumerCzesci,Linia,DataUruchomieniaSortu,Opis,MQE,DostawcaCzesci,Inzynier,Aktywny) values (@NumerCzesci, @Linia, @DataUruchomieniaSortu, @Opis, @MQE, @Firma, @Inzynier, 1)", cnn))
+                using (SqlCommand command = new SqlCommand("insert into dbo.Sortowania(NumerCzesci, Linia, DataUruchomienia, Wady, MQE, DostawcaCzesci, InzynierLiniowy, Aktywny)values (@NumerCzesci, @Linia, @DataUruchomieniaSortu, @Opis, @MQE, @Firma, @Inzynier, 0)", cnn))
                 {
                     command.Parameters.AddWithValue("@NumerCzesci", numer);
                     command.Parameters.AddWithValue("@Linia", linia);

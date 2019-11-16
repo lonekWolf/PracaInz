@@ -26,3 +26,17 @@ D:\pr\PracaInz\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.Properties.Resource
 D:\pr\PracaInz\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.csproj.GenerateResource.cache
 D:\pr\PracaInz\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.exe
 D:\pr\PracaInz\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.pdb
+C:\GitRepozytorium\PracaInz\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.csprojAssemblyReference.cache
+C:\GitRepozytorium\PracaInz\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.ArchiwumWindow.resources
+C:\GitRepozytorium\PracaInz\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.EdytujSort.resources
+C:\GitRepozytorium\PracaInz\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.Form1.resources
+C:\GitRepozytorium\PracaInz\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.DodajWindow.resources
+C:\GitRepozytorium\PracaInz\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.InformacjaOSorcieWindow.resources
+C:\GitRepozytorium\PracaInz\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.InformacjaWindow.resources
+C:\GitRepozytorium\PracaInz\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.Properties.Resources.resources
+C:\GitRepozytorium\PracaInz\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.csproj.GenerateResource.cache
+C:\GitRepozytorium\PracaInz\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.exe
+C:\GitRepozytorium\PracaInz\LaboratoriumWabco\obj\Debug\LaboratoriumWabco.pdb
+C:\GitRepozytorium\PracaInz\LaboratoriumWabco\bin\Debug\LaboratoriumWabco.exe.config
+C:\GitRepozytorium\PracaInz\LaboratoriumWabco\bin\Debug\LaboratoriumWabco.exe
+C:\GitRepozytorium\PracaInz\LaboratoriumWabco\bin\Debug\LaboratoriumWabco.pdb

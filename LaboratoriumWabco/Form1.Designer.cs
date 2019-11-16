@@ -42,8 +42,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.wabcoDBDataSet = new LaboratoriumWabco.WabcoDBDataSet();
             this.aktualneSortyBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.wabco_AktualneSortyTableAdapter = new LaboratoriumWabco.WabcoDBDataSetTableAdapters.Wabco_AktualneSortyTableAdapter();
-            this.tableAdapterManager = new LaboratoriumWabco.WabcoDBDataSetTableAdapters.TableAdapterManager();
+            
             this.aktualneSortyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.aktualneSortyBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.aktualneSortyBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
@@ -178,17 +177,7 @@
             this.aktualneSortyBindingSource.Position = 0;
             // 
             // wabco_AktualneSortyTableAdapter
-            // 
-            this.wabco_AktualneSortyTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.UpdateOrder = LaboratoriumWabco.WabcoDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.Wabco_AktualneSortyTableAdapter = this.wabco_AktualneSortyTableAdapter;
-            // 
-            // aktualneSortyBindingSource1
-            // 
+          
             this.aktualneSortyBindingSource1.DataSource = this.wabcoDBDataSet;
             this.aktualneSortyBindingSource1.Position = 0;
             // 
@@ -288,8 +277,7 @@
         private System.Windows.Forms.Button button5;
         private WabcoDBDataSet wabcoDBDataSet;
         private System.Windows.Forms.BindingSource aktualneSortyBindingSource;
-        private WabcoDBDataSetTableAdapters.Wabco_AktualneSortyTableAdapter wabco_AktualneSortyTableAdapter;
-        private WabcoDBDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+         
         private System.Windows.Forms.BindingSource aktualneSortyBindingSource1;
         private System.Windows.Forms.BindingSource aktualneSortyBindingSource2;
         private System.Windows.Forms.BindingSource aktualneSortyBindingSource3;

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Label labelPierwszyDzienSortu;
+            System.Windows.Forms.Label labelInfo;
             this.labelEdytowanySort = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.Data = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,26 +50,29 @@
             this.buttonUsun = new System.Windows.Forms.Button();
             this.buttonAktualizuj = new System.Windows.Forms.Button();
             this.buttonZamknij = new System.Windows.Forms.Button();
-            labelPierwszyDzienSortu = new System.Windows.Forms.Label();
+            this.labelInfoBlad = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.labelStatystyki = new System.Windows.Forms.Label();
+            labelInfo = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // labelInfo
+            // 
+            labelInfo.AutoSize = true;
+            labelInfo.Location = new System.Drawing.Point(19, 48);
+            labelInfo.Name = "labelInfo";
+            labelInfo.Size = new System.Drawing.Size(106, 13);
+            labelInfo.TabIndex = 1;
+            labelInfo.Text = "Statystyki sortowania";
             // 
             // labelEdytowanySort
             // 
             this.labelEdytowanySort.AutoSize = true;
-            this.labelEdytowanySort.Location = new System.Drawing.Point(16, 9);
+            this.labelEdytowanySort.Location = new System.Drawing.Point(19, 9);
             this.labelEdytowanySort.Name = "labelEdytowanySort";
             this.labelEdytowanySort.Size = new System.Drawing.Size(174, 13);
             this.labelEdytowanySort.TabIndex = 0;
             this.labelEdytowanySort.Text = "Informacje na temat sortu częsci nr:";
-            // 
-            // labelPierwszyDzienSortu
-            // 
-            labelPierwszyDzienSortu.AutoSize = true;
-            labelPierwszyDzienSortu.Location = new System.Drawing.Point(16, 34);
-            labelPierwszyDzienSortu.Name = "labelPierwszyDzienSortu";
-            labelPierwszyDzienSortu.Size = new System.Drawing.Size(108, 13);
-            labelPierwszyDzienSortu.TabIndex = 1;
-            labelPierwszyDzienSortu.Text = "Pierwszy dzień sortu: ";
             // 
             // listView1
             // 
@@ -111,7 +114,7 @@
             // labelInofrmacjaOWadzie
             // 
             this.labelInofrmacjaOWadzie.AutoSize = true;
-            this.labelInofrmacjaOWadzie.Location = new System.Drawing.Point(19, 264);
+            this.labelInofrmacjaOWadzie.Location = new System.Drawing.Point(19, 314);
             this.labelInofrmacjaOWadzie.Name = "labelInofrmacjaOWadzie";
             this.labelInofrmacjaOWadzie.Size = new System.Drawing.Size(72, 13);
             this.labelInofrmacjaOWadzie.TabIndex = 3;
@@ -119,7 +122,7 @@
             // 
             // richTextBoxWadyCzęsci
             // 
-            this.richTextBoxWadyCzęsci.Location = new System.Drawing.Point(19, 292);
+            this.richTextBoxWadyCzęsci.Location = new System.Drawing.Point(19, 333);
             this.richTextBoxWadyCzęsci.Name = "richTextBoxWadyCzęsci";
             this.richTextBoxWadyCzęsci.Size = new System.Drawing.Size(373, 96);
             this.richTextBoxWadyCzęsci.TabIndex = 4;
@@ -128,7 +131,7 @@
             // labelDodajInformacje
             // 
             this.labelDodajInformacje.AutoSize = true;
-            this.labelDodajInformacje.Location = new System.Drawing.Point(404, 31);
+            this.labelDodajInformacje.Location = new System.Drawing.Point(406, 48);
             this.labelDodajInformacje.Name = "labelDodajInformacje";
             this.labelDodajInformacje.Size = new System.Drawing.Size(79, 13);
             this.labelDodajInformacje.TabIndex = 5;
@@ -202,43 +205,79 @@
             // 
             this.buttonDodaj.Location = new System.Drawing.Point(407, 162);
             this.buttonDodaj.Name = "buttonDodaj";
-            this.buttonDodaj.Size = new System.Drawing.Size(266, 23);
+            this.buttonDodaj.Size = new System.Drawing.Size(266, 36);
             this.buttonDodaj.TabIndex = 16;
             this.buttonDodaj.Text = "Dodaj";
             this.buttonDodaj.UseVisualStyleBackColor = true;
+            this.buttonDodaj.Click += new System.EventHandler(this.buttonDodaj_Click);
             // 
             // buttonUsun
             // 
-            this.buttonUsun.Location = new System.Drawing.Point(407, 220);
+            this.buttonUsun.Location = new System.Drawing.Point(407, 204);
             this.buttonUsun.Name = "buttonUsun";
-            this.buttonUsun.Size = new System.Drawing.Size(266, 23);
+            this.buttonUsun.Size = new System.Drawing.Size(266, 39);
             this.buttonUsun.TabIndex = 17;
             this.buttonUsun.Text = "Usuń";
             this.buttonUsun.UseVisualStyleBackColor = true;
+            this.buttonUsun.Click += new System.EventHandler(this.buttonUsun_Click);
             // 
             // buttonAktualizuj
             // 
-            this.buttonAktualizuj.Location = new System.Drawing.Point(407, 290);
+            this.buttonAktualizuj.Location = new System.Drawing.Point(407, 331);
             this.buttonAktualizuj.Name = "buttonAktualizuj";
             this.buttonAktualizuj.Size = new System.Drawing.Size(264, 35);
             this.buttonAktualizuj.TabIndex = 18;
             this.buttonAktualizuj.Text = "Aktualizuj Wadę";
             this.buttonAktualizuj.UseVisualStyleBackColor = true;
+            this.buttonAktualizuj.Click += new System.EventHandler(this.buttonAktualizuj_Click);
             // 
             // buttonZamknij
             // 
-            this.buttonZamknij.Location = new System.Drawing.Point(407, 343);
+            this.buttonZamknij.Location = new System.Drawing.Point(407, 384);
             this.buttonZamknij.Name = "buttonZamknij";
             this.buttonZamknij.Size = new System.Drawing.Size(264, 45);
             this.buttonZamknij.TabIndex = 19;
             this.buttonZamknij.Text = "Zamknij";
             this.buttonZamknij.UseVisualStyleBackColor = true;
+            this.buttonZamknij.Click += new System.EventHandler(this.buttonZamknij_Click);
+            // 
+            // labelInfoBlad
+            // 
+            this.labelInfoBlad.AutoSize = true;
+            this.labelInfoBlad.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelInfoBlad.Location = new System.Drawing.Point(406, 9);
+            this.labelInfoBlad.Name = "labelInfoBlad";
+            this.labelInfoBlad.Size = new System.Drawing.Size(50, 18);
+            this.labelInfoBlad.TabIndex = 20;
+            this.labelInfoBlad.Text = "label1";
+            this.labelInfoBlad.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(19, 259);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Statystyki:";
+            // 
+            // labelStatystyki
+            // 
+            this.labelStatystyki.AutoSize = true;
+            this.labelStatystyki.Location = new System.Drawing.Point(19, 284);
+            this.labelStatystyki.Name = "labelStatystyki";
+            this.labelStatystyki.Size = new System.Drawing.Size(322, 13);
+            this.labelStatystyki.TabIndex = 22;
+            this.labelStatystyki.Text = "Sprawdzono:   sztuk, 10 sztuk było OK, znaleziono 100 sztuk NOK";
             // 
             // EdytujSort
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 420);
+            this.ClientSize = new System.Drawing.Size(683, 450);
+            this.Controls.Add(this.labelStatystyki);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.labelInfoBlad);
             this.Controls.Add(this.buttonZamknij);
             this.Controls.Add(this.buttonAktualizuj);
             this.Controls.Add(this.buttonUsun);
@@ -255,7 +294,7 @@
             this.Controls.Add(this.richTextBoxWadyCzęsci);
             this.Controls.Add(this.labelInofrmacjaOWadzie);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(labelPierwszyDzienSortu);
+            this.Controls.Add(labelInfo);
             this.Controls.Add(this.labelEdytowanySort);
             this.Name = "EdytujSort";
             this.Text = "EdytujSort";
@@ -287,5 +326,8 @@
         private System.Windows.Forms.Button buttonUsun;
         private System.Windows.Forms.Button buttonAktualizuj;
         private System.Windows.Forms.Button buttonZamknij;
+        private System.Windows.Forms.Label labelInfoBlad;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelStatystyki;
     }
 }
