@@ -42,7 +42,6 @@
             this.button5 = new System.Windows.Forms.Button();
             this.wabcoDBDataSet = new LaboratoriumWabco.WabcoDBDataSet();
             this.aktualneSortyBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            
             this.aktualneSortyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.aktualneSortyBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.aktualneSortyBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
@@ -176,8 +175,8 @@
             this.aktualneSortyBindingSource.DataSource = this.wabcoDBDataSet;
             this.aktualneSortyBindingSource.Position = 0;
             // 
-            // wabco_AktualneSortyTableAdapter
-          
+            // aktualneSortyBindingSource1
+            // 
             this.aktualneSortyBindingSource1.DataSource = this.wabcoDBDataSet;
             this.aktualneSortyBindingSource1.Position = 0;
             // 
@@ -233,9 +232,8 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(13, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 13);
+            this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 10;
-            this.label2.Text = "K.Hadaś wersja beta";
             // 
             // Form1
             // 

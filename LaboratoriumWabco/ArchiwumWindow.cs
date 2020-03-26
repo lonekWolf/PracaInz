@@ -19,9 +19,9 @@ namespace LaboratoriumWabco
 
         private void listViewArchiwumPobierzDane()
         {
-            using (SqlConnection cnn = new SqlConnection(@"Server = tcp:wabcosorty.database.windows.net,1433; Initial Catalog = WabcoDB; Persist Security Info = False; User ID = lonekwolf; Password = Plemion@12; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;"))  //Data Source = DESKTOP - FN2EULB; Initial Catalog = WabcoDB; Integrated Security = True
+            using (SqlConnection cnn = new SqlConnection(Properties.Settings.Default.CSBazy))  
             {
-                using (SqlCommand command = new SqlCommand("select NumerCzesci, DataUruchomieniaSortu, Opis from [Wabco.ZbiorSortow] order by id", cnn))
+                using (SqlCommand command = new SqlCommand("select * from dbo.Sortowania  order by id", cnn))
                 {
                     cnn.Open();
                     SqlDataAdapter SqlDataAdap = new SqlDataAdapter(command);
@@ -30,11 +30,13 @@ namespace LaboratoriumWabco
 
                     foreach (DataRow row in dtWynik.Rows)
                     {
-                        ListViewItem item = new ListViewItem(row["NumerCzesci"].ToString()); 
-                        item.SubItems.Add(row["DataUruchomieniaSortu"].ToString());
-                        item.SubItems.Add(row["Opis"].ToString()); 
+                        ListViewItem item = new ListViewItem(row["NumerCzesci"].ToString());
+                        item.SubItems.Add(row["Linia"].ToString());
+                        item.SubItems.Add(row["DataUruchomienia"].ToString());
+                        item.SubItems.Add(row["Wady"].ToString());
+                        item.SubItems.Add(row["MQE"].ToString());
                         listViewArchiwum.Items.Add(item);
-}
+                    }
                 }
             }
         }
