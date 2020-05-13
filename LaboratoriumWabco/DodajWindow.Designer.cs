@@ -42,16 +42,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxData = new System.Windows.Forms.TextBox();
             this.textBoxMQE = new System.Windows.Forms.TextBox();
-            this.richTextBoxOpis = new System.Windows.Forms.RichTextBox();
             this.textBoxFirma = new System.Windows.Forms.TextBox();
             this.textBoxInzynier = new System.Windows.Forms.TextBox();
             this.labelInformacja = new System.Windows.Forms.Label();
+            this.richTextBoxOpis = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.wabcoDBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(465, 195);
+            this.button1.Location = new System.Drawing.Point(469, 178);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 79);
             this.button1.TabIndex = 0;
@@ -61,7 +61,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(465, 116);
+            this.button2.Location = new System.Drawing.Point(469, 96);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 75);
             this.button2.TabIndex = 1;
@@ -166,14 +166,6 @@
             this.textBoxMQE.Size = new System.Drawing.Size(137, 20);
             this.textBoxMQE.TabIndex = 12;
             // 
-            // richTextBoxOpis
-            // 
-            this.richTextBoxOpis.Location = new System.Drawing.Point(19, 178);
-            this.richTextBoxOpis.Name = "richTextBoxOpis";
-            this.richTextBoxOpis.Size = new System.Drawing.Size(428, 79);
-            this.richTextBoxOpis.TabIndex = 13;
-            this.richTextBoxOpis.Text = "";
-            // 
             // textBoxFirma
             // 
             this.textBoxFirma.Location = new System.Drawing.Point(316, 81);
@@ -192,13 +184,21 @@
             // 
             this.labelInformacja.AutoSize = true;
             this.labelInformacja.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelInformacja.Location = new System.Drawing.Point(465, 61);
+            this.labelInformacja.Location = new System.Drawing.Point(465, 25);
             this.labelInformacja.Name = "labelInformacja";
             this.labelInformacja.Size = new System.Drawing.Size(48, 22);
             this.labelInformacja.TabIndex = 16;
             this.labelInformacja.Text = "Błąd";
             this.labelInformacja.Visible = false;
             this.labelInformacja.Click += new System.EventHandler(this.labelInformacja_Click);
+            // 
+            // richTextBoxOpis
+            // 
+            this.richTextBoxOpis.Location = new System.Drawing.Point(19, 178);
+            this.richTextBoxOpis.Name = "richTextBoxOpis";
+            this.richTextBoxOpis.Size = new System.Drawing.Size(428, 79);
+            this.richTextBoxOpis.TabIndex = 13;
+            this.richTextBoxOpis.Text = "";
             // 
             // DodajWindow
             // 
@@ -247,9 +247,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBoxData;
         private System.Windows.Forms.TextBox textBoxMQE;
-        private System.Windows.Forms.RichTextBox richTextBoxOpis;
         private System.Windows.Forms.TextBox textBoxFirma;
         private System.Windows.Forms.TextBox textBoxInzynier;
         private System.Windows.Forms.Label labelInformacja;
+        private System.Windows.Forms.RichTextBox richTextBoxOpis;
     }
 }
